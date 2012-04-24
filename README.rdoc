@@ -1,0 +1,9 @@
+= RAILS BASE
+
+== Usage
+
+=== Installation
+
+  rails new app -m https://raw.github.com/ernane/rails_base/master/template.rb
+
+=== Setting up

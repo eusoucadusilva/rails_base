@@ -4,6 +4,7 @@ namespace :nginx do
     run "#{sudo} add-apt-repository ppa:nginx/stable"
     run "#{sudo} apt-get -y update"
     run "#{sudo} apt-get -y install nginx"
+    run "#{sudo} service nginx start"
   end
   after "deploy:install", "nginx:install"
 

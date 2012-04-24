@@ -4,7 +4,7 @@ def get_file(file)
 end
 
 def base_url
-  "https://raw.github.com/ernane/rails_base/master/template.rb"
+  "https://raw.github.com/ernane/rails_base/master"
 end
 
 # SETUP BUNDLE
@@ -32,6 +32,7 @@ get_file "config/deploy.rb"
 
 run "mkdir -p config/recipes/templates"
 
+get_file "config/recipes/unix_user.rb"
 get_file "config/recipes/base.rb"
 get_file "config/recipes/check.rb"
 get_file "config/recipes/mysql.rb"
@@ -40,7 +41,6 @@ get_file "config/recipes/nodejs.rb"
 get_file "config/recipes/postgresql.rb"
 get_file "config/recipes/rbenv.rb"
 get_file "config/recipes/unicorn.rb"
-get_file "config/recipes/unix_user.rb"
 
 get_file "config/recipes/templates/mysql.yml.erb"
 get_file "config/recipes/templates/nginx_unicorn.erb"
