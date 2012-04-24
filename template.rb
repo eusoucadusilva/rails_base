@@ -4,7 +4,7 @@ def get_file(file)
 end
 
 def base_url
-  "https://github.com/ernane/rails_setup/raw/master"
+  "https://raw.github.com/ernane/rails_base/master/template.rb"
 end
 
 # SETUP BUNDLE
