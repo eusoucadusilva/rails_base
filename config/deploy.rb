@@ -15,6 +15,7 @@ load "config/recipes/#{database}"
 load "config/recipes/nodejs"
 load "config/recipes/rbenv"
 load "config/recipes/check"
+load "config/recipes/unix_user"
 
 server "173.246.40.14", :web, :app, :db, primary: true
 

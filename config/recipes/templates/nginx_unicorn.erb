@@ -3,11 +3,11 @@ upstream <%= application %>_unicorn {
 }
 
 server {
-  listen 80 default deferred;
-  <% if subdmain %>
-    server_name <%= "#{subdmain}.#{domain}" %>
+  listen 80;
+  <% if subdomain %>
+    server_name <%= "#{subdomain}.#{domain};" %>
   <% else %>
-    server_name <%= "#{domain} www.#{domain}" %>
+    server_name <%= "#{domain} www.#{domain};" %>
   <% end %>
   root <%= current_path %>/public;
 
