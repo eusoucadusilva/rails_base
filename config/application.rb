@@ -9,6 +9,7 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 
 # SET MODULE FOR YOU APPLICATION NAME
+# example: module
 module Hackerboard
   class Application < Rails::Application
     config.time_zone = "Brasilia"

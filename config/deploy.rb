@@ -4,6 +4,9 @@ require "capistrano_colors"
 #set :database, "mysql"
 set :database, "postgresql"
 
+set :domain, "domain.com"
+set :subdomain, "subdmain" #or false
+
 
 load "config/recipes/base"
 load "config/recipes/nginx"
@@ -29,4 +32,4 @@ set :branch, "master"
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
-after "deploy", "deploy:cleanup" # keep only the last 5 releases
+after "deploy", "deploy:cleanup"
